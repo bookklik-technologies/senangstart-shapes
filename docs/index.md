@@ -5,7 +5,7 @@ hero:
   text: Beautiful shapes for modern web projects
   tagline: Curated, customizable, and easy to use SVG shape library
   image:
-    src: /assets/shapes-hero.svg
+    src: /assets/senangstart-shapes-logo.svg
     alt: SenangStart Shapes
   actions:
     - theme: brand

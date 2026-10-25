@@ -5,7 +5,7 @@ hero:
   text: Bentuk cantik untuk projek web moden
   tagline: Pustaka bentuk SVG terkurasi, boleh disesuaikan, dan mudah digunakan
   image:
-    src: /assets/shapes-hero.svg
+    src: /assets/senangstart-shapes-logo.svg
     alt: SenangStart Shapes
   actions:
     - theme: brand
