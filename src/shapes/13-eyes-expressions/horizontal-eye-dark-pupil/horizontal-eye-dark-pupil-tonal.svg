@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<g opacity="0.2">
+<path d="M99.9735 50.0416C99.9852 50.0278 99.9969 50.0139 100.009 50C71.9603 16.6667 28.057 16.6667 0.00878906 50C0.0204612 50.0139 0.0321411 50.0278 0.0438211 50.0416L99.9735 50.0416Z" fill="currentColor"/>
+<path d="M0.043823 49.9583C0.0321431 49.9722 0.0204651 49.9861 0.00878906 50C28.057 83.3334 71.9604 83.3334 100.009 50C99.9969 49.9861 99.9852 49.9722 99.9735 49.9583L0.043823 49.9583Z" fill="currentColor"/>
+</g>
+<circle opacity="0.5" cx="50" cy="50" r="25" fill="currentColor"/>
+<circle cx="50" cy="50" r="12" fill="currentColor"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="100" height="100" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+

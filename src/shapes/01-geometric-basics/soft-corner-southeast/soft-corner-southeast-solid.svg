@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M-1.52588e-05 50C-1.52588e-05 22.3858 22.3858 -2.28882e-05 50 -2.28882e-05C77.6142 -2.28882e-05 100 22.3858 100 50C100 63.987 100 87 100 100C90.5 100 63.6273 100 50 100C22.3858 100 -1.52588e-05 77.6142 -1.52588e-05 50Z" fill="currentColor"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="100" height="100" fill="white" transform="matrix(1 0 0 -1 0 100)"/>
+</clipPath>
+</defs>
+</svg>
+

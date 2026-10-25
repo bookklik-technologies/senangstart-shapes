@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<circle cx="28.5" cy="28.5" r="12.5" transform="rotate(-90 28.5 28.5)" fill="currentColor"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M100 0L100 100L0 100L100 0ZM84 71.5C84 64.5964 78.4036 59 71.5 59C64.5964 59 59 64.5964 59 71.5C59 78.4036 64.5964 84 71.5 84C78.4036 84 84 78.4036 84 71.5Z" fill="currentColor"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="100" height="100" fill="white" transform="translate(100) rotate(90)"/>
+</clipPath>
+</defs>
+</svg>
+

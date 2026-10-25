@@ -1,0 +1,291 @@
+# SenangStart Shapes
+
+A native web-component and SVG library by Bookklik Technologies.
+
+Package: @bookklik/senangstart-shapes
+Version: 0.1.1
+License: MIT
+Assets: 496; shapes: 302; categories: 14.
+
+Usage: <ss-shape shape="soft-nova" variant="duotone"></ss-shape>
+Sizing: font-size or width/height.
+Colors: currentColor for monochrome; --ss-shape-primary (#2563EB), --ss-shape-secondary (#DBEAFE) for duotones.
+Default variant order: solid, outline, duotone, tonal. Explicit missing variants render empty.
+Collections: import shapes, { catalog } from '@bookklik/senangstart-shapes/shapes'.
+CommonJS: const { shapes, catalog } = require('@bookklik/senangstart-shapes/shapes').
+CSS: import '@bookklik/senangstart-shapes/style.css'; <i class="ss-shape ss-shape-soft-nova" aria-hidden="true"></i>. CSS-only masks are monochrome.
+
+# Getting Started
+
+SenangStart Shapes is a collection of **496 SVG assets**, covering **302 shapes** in **14 categories**. Use a native web component, CSS masks, or SVG strings in your own renderer. No framework or runtime dependency is required.
+
+## Install
+
+```bash
+npm install @bookklik/senangstart-shapes
+```
+
+```js
+import '@bookklik/senangstart-shapes';
+```
+
+## Add a shape
+
+```html
+<ss-shape shape="soft-nova" variant="duotone"
+  style="font-size: 80px"></ss-shape>
+```
+
+<ss-shape shape="soft-nova" variant="duotone" style="font-size:80px"></ss-shape>
+
+Use paired opening and closing tags in HTML. Custom elements are not HTML void elements.
+
+The default size is `1em`. Change `font-size`, or set `width` and `height` directly. Browse the [shape library](../shapes/) to find names, variants, and copyable examples.
+
+## Use a CDN
+
+```html
+<script src="https://unpkg.com/@bookklik/senangstart-shapes@0.1.1/dist/senangstart-shape.min.js"></script>
+<ss-shape shape="ten-lobe-rosette"></ss-shape>
+```
+
+CDN examples assume version 0.1.1 has been published. During local development, use `dist/senangstart-shape.min.js` after running `npm run build`.
+
+Read [installation](./installation), [usage](./usage), and [styling](./styling) for more options.
+
+# Installation
+
+## npm and bundlers
+
+```bash
+npm install @bookklik/senangstart-shapes
+```
+
+```js
+// Registers <ss-shape> and enhances <i class="ss-shape ...">.
+import '@bookklik/senangstart-shapes';
+
+// Optional CSS-only usage; JavaScript is not required for masks.
+import '@bookklik/senangstart-shapes/style.css';
+```
+
+## Browser script
+
+```html
+<script src="https://unpkg.com/@bookklik/senangstart-shapes@0.1.1/dist/senangstart-shape.min.js"></script>
+<ss-shape shape="soft-nova" variant="duotone"></ss-shape>
+```
+
+The browser global exposes `SenangStartShapes.shapes` and `SenangStartShapes.catalog`. The script works in the document head, with `defer`, or after the document has loaded.
+
+## SVG collection only
+
+```js
+import shapes, { catalog } from '@bookklik/senangstart-shapes/shapes';
+const svg = shapes['soft-nova-duotone'];
+console.log(catalog.assetCount); // 496
+```
+
+```js
+const { shapes, catalog } = require('@bookklik/senangstart-shapes/shapes');
+const svg = shapes['circle-solid'];
+```
+
+This entry point has no DOM side effects and works in Node.js. Metadata is also exported at `@bookklik/senangstart-shapes/catalog.json`. Individual normalized SVGs are available under `@bookklik/senangstart-shapes/svg/<asset-id>.svg`.
+
+## Local development
+
+Requires Node.js 20 or later.
+
+```bash
+npm ci
+npm run build
+npm run preview
+```
+
+Open the printed localhost URL for the standalone gallery. Run `npm run docs:dev` for documentation. `npm run dev` watches library code; rerun `build:svg` after editing the source SVGs. Neither build nor documentation commands run unit tests.
+
+# Usage & Variants
+
+## Web component
+
+```html
+<ss-shape shape="soft-nova" variant="solid"></ss-shape>
+<ss-shape shape="soft-nova" variant="outline" thickness="2.5"></ss-shape>
+<ss-shape shape="soft-nova" variant="duotone"></ss-shape>
+<ss-shape shape="isometric-tall-prism" variant="tonal"></ss-shape>
+<ss-shape shape="circle" variant="solid"></ss-shape>
+```
+
+| Attribute | Behavior |
+| --- | --- |
+| `shape` | Exact shape-folder slug from the catalog. |
+| `variant` | Exact available variant: solid, outline, duotone, or tonal. |
+| `thickness` | A finite positive stroke width, in source SVG units. Existing strokes only. |
+| `aria-label` | Accessible name for a meaningful shape. |
+
+Omitting `variant` selects the first available style in this order: solid, outline, duotone, tonal. Some shapes have only one style. An explicit unavailable variant, an empty variant, or an unknown shape renders empty. The library does not invent missing styles. Attribute changes update the drawing immediately.
+
+Invalid or omitted thickness preserves the source strokes. Thickness does not affect filled geometry. Most source viewBoxes are 100 units wide; stroke values are not pixel sizes.
+
+## CSS-only shapes
+
+Include `@bookklik/senangstart-shapes/style.css` or the browser stylesheet:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@bookklik/senangstart-shapes@0.1.1/dist/senangstart.min.css">
+<i class="ss-shape ss-shape-soft-nova"
+   data-variant="duotone"
+   style="color: #2563eb; font-size: 64px"
+   aria-hidden="true"></i>
+```
+
+CSS masks use a single inherited text color, including duotone assets. Tonal opacity is retained. Loading the browser bundle upgrades these tags to inline SVGs with both colors. For enhanced tags, use `data-thickness` to adjust strokes. Use exactly one `ss-shape-<slug>` class per element. Changes to classes, variant, thickness, and newly inserted elements are observed.
+
+Shape selectors and the loader are separate from SenangStart Icons, so both libraries can be loaded together.
+
+## SVG strings
+
+The collection uses exact filename stems, for example `soft-nova-duotone` or `circle-solid`. Each record in `catalog.shapes` includes `slug`, `name`, `category`, `variants`, `defaultVariant`, and an `assets` map from variant to asset ID.
+
+Normalized SVG strings preserve clipping and original viewBoxes. For repeated direct inline insertion, namespace IDs and references per instance. The web component and loader do this automatically. SVGs loaded as images are isolated documents.
+
+# Styling
+
+## Size and inherited color
+
+```css
+ss-shape {
+  font-size: 64px;
+  color: #2563eb;
+}
+.banner-shape { width: 120px; height: 120px; }
+```
+
+Shape sizing is independent of the original viewBox. Non-square viewBoxes retain their aspect ratio. Monochrome styles and tonal layers inherit `currentColor`.
+
+## Duotone palette
+
+Duotones default to SenangStart blue `#2563EB` and light blue `#DBEAFE`. Override either variable on a shape or an ancestor:
+
+```css
+.my-design {
+  --ss-shape-primary: #2563eb;
+  --ss-shape-secondary: #dbeafe;
+}
+```
+
+```html
+<div class="my-design">
+  <ss-shape shape="soft-nova" variant="duotone"></ss-shape>
+</div>
+```
+
+Set `--ss-shape-primary: currentColor` to make a duotone primary layer inherit text color. Source duotone SVGs use SenangStart blue (`#2563EB`) and light blue (`#DBEAFE`); generated assets expose these through the theme variables above.
+
+CSS variables apply to inline SVGs. An external SVG loaded through `<img>` cannot inherit variables from the page; use a downloaded SVG with resolved colors instead. The gallery download resolves its selected colors into standalone SVG attributes.
+
+## Dark mode
+
+```css
+.dark .my-design {
+  color: #dbeafe;
+  --ss-shape-primary: #82aeff;
+  --ss-shape-secondary: #24354f;
+}
+```
+
+The library does not impose application fonts, page colors, or animations. Add motion through standard CSS and respect `prefers-reduced-motion` when animating.
+
+# Accessibility
+
+## Decorative shapes
+
+The JavaScript component and enhanced tags are decorative by default: they receive `aria-hidden="true"`. Internal SVGs are hidden from assistive technology and cannot receive focus.
+
+```html
+<ss-shape shape="soft-nova"></ss-shape>
+```
+
+For CSS-only elements, explicitly add `aria-hidden="true"`.
+
+## Meaningful shapes
+
+Provide a useful accessible name. The component adds `role="img"` and removes its default hidden state when a nonempty `aria-label` is supplied.
+
+```html
+<ss-shape shape="cloud" aria-label="Cloudy weather"></ss-shape>
+<i class="ss-shape ss-shape-cloud"
+   role="img" aria-label="Cloudy weather"></i>
+```
+
+Explicit caller-provided `role` and `aria-hidden` attributes take precedence. Remove an explicit `aria-hidden="true"` when turning a decorative shape into meaningful content.
+
+## Buttons and links
+
+Name the control and keep its shape decorative. Do not rely on color or shape alone to communicate a status.
+
+```html
+<button type="button" aria-label="Weather forecast">
+  <ss-shape shape="cloud"></ss-shape>
+</button>
+```
+
+The gallery supports keyboard navigation, visible focus, named filters, modal focus containment, Escape to close, arrow-key code tabs, and announced copy/download results.
+
+# Framework Integration
+
+SenangStart Shapes uses native custom elements. Register the library once in your browser entry point. The collection-only entry point is safe for server rendering.
+
+## Vue
+
+Configure Vue to recognize the custom element:
+
+```js
+// vite.config.js, using @vitejs/plugin-vue
+vue({ template: { compilerOptions: {
+  isCustomElement: tag => tag === 'ss-shape'
+} } })
+```
+
+```vue
+<script setup>
+import '@bookklik/senangstart-shapes';
+</script>
+<template>
+  <ss-shape shape="soft-nova" variant="duotone"
+    style="font-size: 64px"></ss-shape>
+</template>
+```
+
+## React
+
+```jsx
+import '@bookklik/senangstart-shapes';
+
+export default function Shape() {
+  return <ss-shape shape="soft-nova" variant="duotone"
+    style={{ fontSize: '64px' }}></ss-shape>;
+}
+```
+
+For TypeScript JSX, declare `ss-shape` in your framework’s intrinsic element types, with string attributes `shape`, `variant`, and `thickness`.
+
+## Angular
+
+```ts
+import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import '@bookklik/senangstart-shapes';
+
+@Component({
+  selector: 'app-shape',
+  standalone: true,
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  template: '<ss-shape shape="soft-nova" variant="duotone"></ss-shape>'
+})
+export class ShapeComponent {}
+```
+
+## SSR applications
+
+Import the component bundle on the client, for example inside Vue’s `onMounted` or React’s `useEffect`. Import `@bookklik/senangstart-shapes/shapes` on the server when you only need SVG strings or catalog data. Registration is guarded against duplicate calls; collection imports do not register elements.

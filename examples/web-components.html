@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Live web components · SenangStart Shapes</title>
+  <script src="../dist/senangstart-shape.min.js"></script>
+  <style>
+    body{font-family:system-ui,sans-serif;margin:32px;color:#3e4a5d;background:#f5f7fb;line-height:1.6}main{max-width:1000px;margin:auto}section{display:flex;gap:24px;flex-wrap:wrap;margin:24px 0}figure{margin:0;background:white;border:1px solid #dbeafe;padding:24px;border-radius:12px;min-width:130px;text-align:center}ss-shape,i.ss-shape{font-size:80px;color:#2563eb}label{display:inline-flex;flex-direction:column;gap:8px;margin:0 20px 12px 0}input,select,button{font:inherit;padding:8px;border:1px solid #c7d7ef;border-radius:6px;background:white;color:#3e4a5d}figcaption{font-size:12px;margin-top:12px}#custom-theme{--ss-shape-primary:#dc2626;--ss-shape-secondary:#fecaca}
+  </style>
+</head>
+<body><main>
+  <h1>Live web components</h1>
+  <p>Change attributes on the component and enhanced tag together. Source stroke widths return when thickness is empty or invalid.</p>
+  <label>Shape<select id="shape"><option value="soft-nova">Soft nova</option><option value="isometric-tall-prism">Tonal-only prism</option><option value="circle">Circle</option><option value="soft-corner-southwest">Clipped corner</option><option value="disc-over-bowl">Non-square viewBox</option><option value="unknown-shape">Unknown shape (empty)</option></select></label>
+  <label>Variant<select id="variant"><option value="">Default (attribute omitted)</option><option>solid</option><option>outline</option><option>duotone</option><option>tonal</option><option>unavailable</option></select></label>
+  <label>Thickness<input id="thickness" type="text" placeholder="Source default"></label>
+  <label>Accessible name<input id="label" type="text" placeholder="Decorative by default"></label>
+  <section aria-label="Live renderers">
+    <figure><ss-shape id="component" shape="soft-nova"></ss-shape><figcaption>Web component</figcaption></figure>
+    <figure><i id="enhanced" class="ss-shape ss-shape-soft-nova"></i><figcaption>Enhanced tag</figcaption></figure>
+  </section>
+  <button id="add" type="button">Add another clipped shape</button>
+  <section id="insertions" aria-label="Dynamically added clipped shapes">
+    <figure><i class="ss-shape ss-shape-soft-corner-southwest"></i><figcaption>Clip instance 1</figcaption></figure>
+    <figure><i class="ss-shape ss-shape-soft-corner-southwest"></i><figcaption>Clip instance 2</figcaption></figure>
+  </section>
+  <h2>Colors inherited through an ancestor</h2>
+  <section id="custom-theme" aria-label="Custom duotone theme"><ss-shape shape="soft-nova" variant="duotone"></ss-shape><i class="ss-shape ss-shape-soft-nova" data-variant="duotone"></i></section>
+  <p><a href="../">Gallery</a> · <a href="css-only.html">CSS-only example</a></p>
+</main>
+<script>
+  const component = document.querySelector('#component');
+  const enhanced = document.querySelector('#enhanced');
+  for (const name of ['shape', 'variant', 'thickness', 'label']) {
+    document.querySelector('#' + name).addEventListener('input', event => {
+      const value = event.target.value;
+      if (name === 'shape') {
+        component.setAttribute('shape', value);
+        enhanced.className = 'ss-shape ss-shape-' + value;
+      } else {
+        const attribute = name === 'label' ? 'aria-label' : name;
+        const dataAttribute = name === 'label' ? 'aria-label' : 'data-' + name;
+        if (value) { component.setAttribute(attribute, value); enhanced.setAttribute(dataAttribute, value); }
+        else { component.removeAttribute(attribute); enhanced.removeAttribute(dataAttribute); }
+      }
+    });
+  }
+  let count = 2;
+  document.querySelector('#add').addEventListener('click', () => {
+    const figure = document.createElement('figure');
+    figure.innerHTML = '<i class="ss-shape ss-shape-soft-corner-southwest"></i><figcaption>Clip instance ' + ++count + '</figcaption>';
+    document.querySelector('#insertions').append(figure);
+  });
+</script>
+</body>
+</html>

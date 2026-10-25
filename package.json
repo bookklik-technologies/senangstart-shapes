@@ -1,0 +1,70 @@
+{
+  "name": "@bookklik/senangstart-shapes",
+  "version": "0.1.1",
+  "description": "Curated, customizable SVG shapes for web projects in the SenangStart ecosystem.",
+  "main": "dist/senangstart-shape.cjs",
+  "module": "dist/senangstart-shape.mjs",
+  "browser": "dist/senangstart-shape.min.js",
+  "unpkg": "dist/senangstart-shape.min.js",
+  "jsdelivr": "dist/senangstart-shape.min.js",
+  "exports": {
+    ".": {
+      "import": "./dist/senangstart-shape.mjs",
+      "require": "./dist/senangstart-shape.cjs"
+    },
+    "./shapes": {
+      "import": "./dist/shapes.mjs",
+      "require": "./dist/shapes.cjs"
+    },
+    "./catalog.json": "./dist/catalog.json",
+    "./style.css": "./dist/senangstart.min.css",
+    "./dist/*": "./dist/*",
+    "./svg/*": "./dist/svg/*"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE.md"
+  ],
+  "sideEffects": [
+    "./dist/senangstart-shape.*",
+    "**/*.css"
+  ],
+  "scripts": {
+    "build:svg": "node scripts/build-assets.js",
+    "build:css": "node scripts/build-assets.js",
+    "build:shape-docs": "node scripts/build-shape-docs.js",
+    "build": "node scripts/build.js",
+    "prepack": "npm run build",
+    "dev": "npm run build:svg && webpack --mode development --watch",
+    "build:watch": "npm run build:svg && webpack --mode production --watch",
+    "docs:dev": "npm run build && vitepress dev docs",
+    "docs:build": "npm run build && vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "preview": "node scripts/serve.js"
+  },
+  "keywords": [
+    "senangstart",
+    "shapes",
+    "svg",
+    "web-components",
+    "design",
+    "duotone"
+  ],
+  "author": "a-hakim",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bookklik-technologies/senangstart-shapes.git"
+  },
+  "homepage": "https://bookklik-technologies.github.io/senangstart-shapes/",
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "terser-webpack-plugin": "^5.3.9",
+    "vitepress": "^1.6.4",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
