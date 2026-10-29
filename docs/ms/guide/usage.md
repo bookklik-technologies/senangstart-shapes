@@ -30,7 +30,7 @@ Ketebalan tidak sah atau tidak ditetapkan mengekalkan strok sumber. Ketebalan ti
 Sertakan `@bookklik/senangstart-shapes/style.css` atau helaian gaya pelayar:
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@bookklik/senangstart-shapes@0.1.1/dist/senangstart.min.css">
+<link rel="stylesheet" href="https://unpkg.com/@bookklik/senangstart-shapes@0.1.2/dist/senangstart.min.css">
 <i class="ss-shape ss-shape-soft-nova"
    data-variant="duotone"
    style="color: #2563eb; font-size: 64px"

@@ -30,11 +30,11 @@ The default size is \`1em\`. Change \`font-size\`, or set \`width\` and \`height
 ## Use a CDN
 
 \`\`\`html
-<script src="https://unpkg.com/@bookklik/senangstart-shapes@0.1.1/dist/senangstart-shape.min.js"></script>
+<script src="https://unpkg.com/@bookklik/senangstart-shapes@0.1.2/dist/senangstart-shape.min.js"></script>
 <ss-shape shape="ten-lobe-rosette"></ss-shape>
 \`\`\`
 
-CDN examples assume version 0.1.1 has been published. During local development, use \`dist/senangstart-shape.min.js\` after running \`npm run build\`.
+CDN examples assume version 0.1.2 has been published. During local development, use \`dist/senangstart-shape.min.js\` after running \`npm run build\`.
 
 Read [installation](./installation), [usage](./usage), and [styling](./styling) for more options.`],
     installation: ['Installation', `# Installation
@@ -56,7 +56,7 @@ import '@bookklik/senangstart-shapes/style.css';
 ## Browser script
 
 \`\`\`html
-<script src="https://unpkg.com/@bookklik/senangstart-shapes@0.1.1/dist/senangstart-shape.min.js"></script>
+<script src="https://unpkg.com/@bookklik/senangstart-shapes@0.1.2/dist/senangstart-shape.min.js"></script>
 <ss-shape shape="soft-nova" variant="duotone"></ss-shape>
 \`\`\`
 
@@ -116,7 +116,7 @@ Invalid or omitted thickness preserves the source strokes. Thickness does not af
 Include \`@bookklik/senangstart-shapes/style.css\` or the browser stylesheet:
 
 \`\`\`html
-<link rel="stylesheet" href="https://unpkg.com/@bookklik/senangstart-shapes@0.1.1/dist/senangstart.min.css">
+<link rel="stylesheet" href="https://unpkg.com/@bookklik/senangstart-shapes@0.1.2/dist/senangstart.min.css">
 <i class="ss-shape ss-shape-soft-nova"
    data-variant="duotone"
    style="color: #2563eb; font-size: 64px"
@@ -301,11 +301,11 @@ Saiz lalai ialah \`1em\`. Ubah \`font-size\`, atau tetapkan \`width\` dan \`heig
 ## Gunakan CDN
 
 \`\`\`html
-<script src="https://unpkg.com/@bookklik/senangstart-shapes@0.1.1/dist/senangstart-shape.min.js"></script>
+<script src="https://unpkg.com/@bookklik/senangstart-shapes@0.1.2/dist/senangstart-shape.min.js"></script>
 <ss-shape shape="ten-lobe-rosette"></ss-shape>
 \`\`\`
 
-Contoh CDN mengandaikan versi 0.1.1 telah diterbitkan. Untuk pembangunan tempatan, gunakan \`dist/senangstart-shape.min.js\` selepas menjalankan \`npm run build\`.
+Contoh CDN mengandaikan versi 0.1.2 telah diterbitkan. Untuk pembangunan tempatan, gunakan \`dist/senangstart-shape.min.js\` selepas menjalankan \`npm run build\`.
 
 Baca panduan [pemasangan](./installation), [penggunaan](./usage) dan [penggayaan](./styling).`],
     installation: ['Pemasangan', `# Pemasangan
@@ -327,7 +327,7 @@ import '@bookklik/senangstart-shapes/style.css';
 ## Skrip pelayar
 
 \`\`\`html
-<script src="https://unpkg.com/@bookklik/senangstart-shapes@0.1.1/dist/senangstart-shape.min.js"></script>
+<script src="https://unpkg.com/@bookklik/senangstart-shapes@0.1.2/dist/senangstart-shape.min.js"></script>
 <ss-shape shape="soft-nova" variant="duotone"></ss-shape>
 \`\`\`
 
@@ -387,7 +387,7 @@ Ketebalan tidak sah atau tidak ditetapkan mengekalkan strok sumber. Ketebalan ti
 Sertakan \`@bookklik/senangstart-shapes/style.css\` atau helaian gaya pelayar:
 
 \`\`\`html
-<link rel="stylesheet" href="https://unpkg.com/@bookklik/senangstart-shapes@0.1.1/dist/senangstart.min.css">
+<link rel="stylesheet" href="https://unpkg.com/@bookklik/senangstart-shapes@0.1.2/dist/senangstart.min.css">
 <i class="ss-shape ss-shape-soft-nova"
    data-variant="duotone"
    style="color: #2563eb; font-size: 64px"

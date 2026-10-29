@@ -1,0 +1,316 @@
+[
+  {
+    "slug": "quarter-turn", "name": "Quarter Turn", "nameMs": "Suku Putaran", "category": "geometric",
+    "description": "Alternating quarter discs form a rhythmic, architectural tile.",
+    "descriptionMs": "Suku cakera berselang-seli membentuk jubin seni bina yang berirama.",
+    "width": 160, "height": 160,
+    "colors": { "primary": "#245BDB", "secondary": "#97B6F5", "background": "#EEF3FF" },
+    "motifs": [
+      { "shape": "quarter-disc-northeast", "x": 0, "y": 0, "size": 80 },
+      { "shape": "quarter-disc-northeast", "x": 80, "y": 0, "size": 80, "rotate": 90, "tone": "secondary" },
+      { "shape": "quarter-disc-northeast", "x": 0, "y": 80, "size": 80, "rotate": 270, "tone": "secondary" },
+      { "shape": "quarter-disc-northeast", "x": 80, "y": 80, "size": 80, "rotate": 180 }
+    ]
+  },
+  {
+    "slug": "scallop-stacks", "name": "Scallop Stacks", "nameMs": "Susunan Kerang", "category": "geometric",
+    "description": "Offset half discs bring a soft, mid-century rhythm to backgrounds.",
+    "descriptionMs": "Separuh cakera berselang memberikan irama lembut gaya pertengahan abad pada latar.",
+    "width": 160, "height": 160,
+    "colors": { "primary": "#BC5438", "secondary": "#DEA383", "background": "#FBEEE2" },
+    "motifs": [
+      { "shape": "upward-half-disc", "x": 0, "y": 0, "size": 80 },
+      { "shape": "upward-half-disc", "x": 80, "y": 0, "size": 80 },
+      { "shape": "upward-half-disc", "x": -40, "y": 80, "size": 80, "tone": "secondary" },
+      { "shape": "upward-half-disc", "x": 40, "y": 80, "size": 80, "tone": "secondary" },
+      { "shape": "upward-half-disc", "x": 120, "y": 80, "size": 80, "tone": "secondary" }
+    ]
+  },
+  {
+    "slug": "spark-field", "name": "Spark Field", "nameMs": "Medan Kilauan", "category": "expressive",
+    "description": "Large and small four-point sparks make a playful all-over print.",
+    "descriptionMs": "Kilauan empat penjuru besar dan kecil menghasilkan corak menyeluruh yang ceria.",
+    "width": 160, "height": 160,
+    "colors": { "primary": "#7543A4", "secondary": "#BD8BCB", "background": "#F6EEFA" },
+    "motifs": [
+      { "shape": "classic-four-point-spark", "x": 10, "y": 10, "size": 60 },
+      { "shape": "classic-four-point-spark", "x": 90, "y": 90, "size": 60 },
+      { "shape": "classic-four-point-spark", "x": 106, "y": 26, "size": 28, "tone": "secondary" },
+      { "shape": "classic-four-point-spark", "x": 26, "y": 106, "size": 28, "tone": "secondary" }
+    ]
+  },
+  {
+    "slug": "daisy-check", "name": "Daisy Check", "nameMs": "Dam Bunga Daisi", "category": "botanical",
+    "description": "Two-tone daisies alternate in a generous, cheerful floral grid.",
+    "descriptionMs": "Bunga daisi dua warna berselang-seli dalam grid bunga yang lapang dan ceria.",
+    "width": 180, "height": 180,
+    "colors": { "primary": "#B94C63", "secondary": "#E69B75", "background": "#FFF1E8" },
+    "motifs": [
+      { "shape": "six-petal-daisy", "x": 5, "y": 5, "size": 80 },
+      { "shape": "six-petal-daisy", "x": 95, "y": 5, "size": 80, "tone": "secondary" },
+      { "shape": "six-petal-daisy", "x": 5, "y": 95, "size": 80, "tone": "secondary" },
+      { "shape": "six-petal-daisy", "x": 95, "y": 95, "size": 80 }
+    ]
+  },
+  {
+    "slug": "leaf-weave", "name": "Leaf Weave", "nameMs": "Anyaman Daun", "category": "botanical",
+    "description": "Mirrored pointed leaves create a woven botanical texture.",
+    "descriptionMs": "Daun runcing bercermin menghasilkan tekstur anyaman botani.",
+    "width": 160, "height": 160,
+    "colors": { "primary": "#296450", "secondary": "#83A779", "background": "#F0F3E6" },
+    "motifs": [
+      { "shape": "diagonal-pointed-leaf", "x": 8, "y": 8, "size": 64 },
+      { "shape": "diagonal-pointed-leaf", "x": 88, "y": 8, "size": 64, "rotate": 90, "tone": "secondary" },
+      { "shape": "diagonal-pointed-leaf", "x": 8, "y": 88, "size": 64, "rotate": 90, "tone": "secondary" },
+      { "shape": "diagonal-pointed-leaf", "x": 88, "y": 88, "size": 64 }
+    ]
+  },
+  {
+    "slug": "orbital-dots", "name": "Orbital Dots", "nameMs": "Titik Orbit", "category": "geometric",
+    "description": "Open rings and small discs balance structure with breathing room.",
+    "descriptionMs": "Gelang terbuka dan cakera kecil mengimbangi struktur dengan ruang lapang.",
+    "width": 160, "height": 160,
+    "colors": { "primary": "#196879", "secondary": "#77AEB5", "background": "#EAF5F3" },
+    "motifs": [
+      { "shape": "thin-circular-ring", "x": 8, "y": 8, "size": 64 },
+      { "shape": "thin-circular-ring", "x": 88, "y": 88, "size": 64 },
+      { "shape": "circle", "x": 108, "y": 28, "size": 24, "tone": "secondary" },
+      { "shape": "circle", "x": 28, "y": 108, "size": 24, "tone": "secondary" }
+    ]
+  },
+  {
+    "slug": "portal-rhythm", "name": "Portal Rhythm", "nameMs": "Irama Gerbang", "category": "geometric",
+    "description": "Upright and inverted triple portals give an architectural repeat.",
+    "descriptionMs": "Gerbang tiga lapis tegak dan terbalik memberikan ulangan seni bina.",
+    "width": 180, "height": 180,
+    "colors": { "primary": "#A66425", "secondary": "#D4A85B", "background": "#FCF4DD" },
+    "motifs": [
+      { "shape": "triple-portal", "x": 5, "y": 5, "size": 80 },
+      { "shape": "triple-portal", "x": 95, "y": 5, "size": 80, "rotate": 180, "tone": "secondary" },
+      { "shape": "triple-portal", "x": 5, "y": 95, "size": 80, "rotate": 180, "tone": "secondary" },
+      { "shape": "triple-portal", "x": 95, "y": 95, "size": 80 }
+    ]
+  },
+  {
+    "slug": "pixel-bloom", "name": "Pixel Bloom", "nameMs": "Mekar Piksel", "category": "expressive",
+    "description": "Stepped crosses alternate like a graphic, pixel-cut textile.",
+    "descriptionMs": "Palang bertangga berselang-seli seperti tekstil grafik potongan piksel.",
+    "width": 160, "height": 160,
+    "colors": { "primary": "#333C73", "secondary": "#939BC5", "background": "#F0EFF8" },
+    "motifs": [
+      { "shape": "stepped-cross", "x": 8, "y": 8, "size": 64 },
+      { "shape": "stepped-cross", "x": 88, "y": 8, "size": 64, "tone": "secondary" },
+      { "shape": "stepped-cross", "x": 8, "y": 88, "size": 64, "tone": "secondary" },
+      { "shape": "stepped-cross", "x": 88, "y": 88, "size": 64 }
+    ]
+  },
+  {
+    "slug": "deco-fanfare", "name": "Deco Fanfare", "nameMs": "Kipas Art Deco", "category": "geometric",
+    "description": "Opposing fan bouquets, curved corner lines, and a diamond clasp form an ornamental medallion.",
+    "descriptionMs": "Kipas bertentangan, garisan penjuru melengkung, dan pengikat berlian membentuk medalion hiasan.",
+    "width": 240, "height": 240,
+    "colors": { "primary": "#EAC887", "secondary": "#80A99B", "background": "#203C34" },
+    "motifs": [
+      { "shape": "seven-fold-fan", "x": 64, "y": 8, "size": 112 },
+      { "shape": "seven-fold-fan", "x": 64, "y": 120, "size": 112, "rotate": 180, "tone": "secondary" },
+      { "shape": "quarter-colonnade", "x": 8, "y": 88, "size": 64, "rotate": 90, "tone": "secondary" },
+      { "shape": "quarter-colonnade", "x": 168, "y": 88, "size": 64, "rotate": 270, "tone": "secondary" },
+      { "shape": "diamond", "variant": "outline", "x": 100, "y": 100, "size": 40 }
+    ]
+  },
+  {
+    "slug": "wildflower-trail", "name": "Wildflower Trail", "nameMs": "Jejak Bunga Liar", "category": "botanical",
+    "description": "Uneven sprigs and small blossoms meander along a half-drop botanical trail.",
+    "descriptionMs": "Ranting tidak sekata dan bunga kecil menyusuri jejak botani berselang separuh.",
+    "width": 240, "height": 280,
+    "colors": { "primary": "#385A42", "secondary": "#C47954", "background": "#F8F1DC" },
+    "motifs": [
+      { "shape": "slender-botanical-sprig", "x": 18, "y": 18, "size": 100, "rotate": -12 },
+      { "shape": "leafy-sprig", "x": 126, "y": 152, "size": 96, "rotate": 165 },
+      { "shape": "floating-petals", "x": 154, "y": 24, "size": 52, "rotate": 16, "tone": "secondary" },
+      { "shape": "open-center-bloom", "x": 26, "y": 192, "size": 56, "rotate": -8, "tone": "secondary" },
+      { "shape": "diagonal-pointed-leaf", "x": 114, "y": 120, "size": 28, "rotate": 20 },
+      { "shape": "circle", "x": 196, "y": 104, "size": 10, "tone": "secondary" },
+      { "shape": "circle", "x": 84, "y": 146, "size": 8, "tone": "secondary" }
+    ]
+  },
+  {
+    "slug": "lunar-procession", "name": "Lunar Procession", "nameMs": "Perarakan Bulan", "category": "expressive",
+    "description": "A wide procession of eclipses, orbit bowls, and small stars alternates across midnight bands.",
+    "descriptionMs": "Perarakan gerhana, mangkuk orbit, dan bintang kecil berselang merentasi jalur tengah malam.",
+    "width": 320, "height": 160,
+    "colors": { "primary": "#F0CE8B", "secondary": "#83B2C2", "background": "#192F46" },
+    "motifs": [
+      { "shape": "eccentric-eclipse", "x": 12, "y": 16, "size": 66, "rotate": -30 },
+      { "shape": "bottom-half-orbit", "x": 114, "y": 16, "size": 66, "tone": "secondary" },
+      { "shape": "eccentric-eclipse", "x": 218, "y": 16, "size": 66, "rotate": 150 },
+      { "shape": "classic-four-point-spark", "x": 84, "y": 112, "size": 24, "tone": "secondary" },
+      { "shape": "circle", "x": 184, "y": 120, "size": 10 },
+      { "shape": "classic-four-point-spark", "x": 282, "y": 108, "size": 32, "tone": "secondary" },
+      { "shape": "circle", "x": 28, "y": 122, "size": 7 }
+    ]
+  },
+  {
+    "slug": "ribbon-drift", "name": "Ribbon Drift", "nameMs": "Alunan Reben", "category": "expressive",
+    "description": "Large open loops drift through offset curls, with edge-wrapped ribbons continuing the flow.",
+    "descriptionMs": "Gelung terbuka besar mengalun di antara ikal berselang, dengan reben bersambung pada tepi jubin.",
+    "width": 280, "height": 240,
+    "colors": { "primary": "#A94060", "secondary": "#D89D74", "background": "#FFF0E4" },
+    "motifs": [
+      { "shape": "open-infinity", "x": -52, "y": 18, "size": 104, "rotate": 20 },
+      { "shape": "open-infinity", "x": 228, "y": 18, "size": 104, "rotate": 20 },
+      { "shape": "double-curl", "x": 104, "y": 18, "size": 100, "rotate": -25, "tone": "secondary" },
+      { "shape": "open-infinity", "x": 70, "y": 132, "size": 104, "rotate": -20 },
+      { "shape": "loose-spiral", "x": 204, "y": 150, "size": 64, "rotate": 30, "tone": "secondary" },
+      { "shape": "circle", "x": 32, "y": 178, "size": 12, "tone": "secondary" }
+    ]
+  },
+  {
+    "slug": "terrazzo-party", "name": "Terrazzo Party", "nameMs": "Pesta Terazo", "category": "expressive",
+    "description": "Pebbles, cut discs, and tiny triangles scatter at contrasting scales instead of following a grid.",
+    "descriptionMs": "Batu kecil, potongan cakera, dan segi tiga bertabur pada pelbagai skala tanpa mengikut grid.",
+    "width": 280, "height": 240,
+    "colors": { "primary": "#C04F3E", "secondary": "#367E85", "background": "#FFF3D8" },
+    "motifs": [
+      { "shape": "river-pebble", "x": 18, "y": 24, "size": 66, "rotate": 15 },
+      { "shape": "hand-cut-half-pebble", "x": 144, "y": 16, "size": 42, "rotate": -25, "tone": "secondary" },
+      { "shape": "compact-upright-triangle", "x": 230, "y": 34, "size": 26, "rotate": 35 },
+      { "shape": "kidney-island", "x": 100, "y": 100, "size": 72, "rotate": 70, "tone": "secondary" },
+      { "shape": "tidal-droplet", "x": 206, "y": 146, "size": 52, "rotate": -20 },
+      { "shape": "upward-half-disc", "x": 20, "y": 154, "size": 54, "rotate": 25, "tone": "secondary" },
+      { "shape": "compact-upright-triangle", "x": 130, "y": 202, "size": 22, "rotate": -15 },
+      { "shape": "circle", "x": 86, "y": 82, "size": 9 },
+      { "shape": "circle", "x": 214, "y": 96, "size": 12, "tone": "secondary" },
+      { "shape": "circle", "x": 88, "y": 210, "size": 7, "tone": "secondary" }
+    ]
+  },
+  {
+    "slug": "tidal-counterpoint", "name": "Tidal Counterpoint", "nameMs": "Irama Pasang Surut", "category": "geometric",
+    "description": "Broad converging wave fans face alternating directions while fine rings punctuate the channels.",
+    "descriptionMs": "Kipas gelombang lebar menghadap arah berselang dengan gelang halus menghiasi ruang antaranya.",
+    "width": 280, "height": 200,
+    "colors": { "primary": "#176D7A", "secondary": "#89B9B4", "background": "#ECF5E9" },
+    "motifs": [
+      { "shape": "converging-wave-fan-northeast", "x": 10, "y": 12, "size": 120 },
+      { "shape": "converging-wave-fan-northeast", "x": 150, "y": 68, "size": 120, "rotate": 180, "tone": "secondary" },
+      { "shape": "thin-circular-ring", "x": 184, "y": 12, "size": 38 },
+      { "shape": "thin-circular-ring", "x": 60, "y": 150, "size": 38, "tone": "secondary" },
+      { "shape": "circle", "x": 134, "y": 96, "size": 12 }
+    ]
+  },
+  {
+    "slug": "prism-parade", "name": "Prism Parade", "nameMs": "Perarakan Prisma", "category": "geometric",
+    "description": "Outline crystals frame solid kites in staggered columns, linked by smaller open diamonds.",
+    "descriptionMs": "Kristal garis luar membingkai layang-layang padu dalam lajur berselang, dihubungkan berlian kecil terbuka.",
+    "width": 240, "height": 280,
+    "colors": { "primary": "#554A87", "secondary": "#B58AA8", "background": "#F6EFF5" },
+    "motifs": [
+      { "shape": "cut-crystal", "variant": "outline", "x": 12, "y": 16, "size": 100 },
+      { "shape": "folded-kite", "x": 36, "y": 40, "size": 52, "tone": "secondary" },
+      { "shape": "cut-crystal", "variant": "outline", "x": 128, "y": 154, "size": 100 },
+      { "shape": "folded-kite", "x": 152, "y": 178, "size": 52, "tone": "secondary" },
+      { "shape": "ribbon-diamond", "x": 152, "y": 38, "size": 48, "rotate": 15, "tone": "secondary" },
+      { "shape": "ribbon-diamond", "x": 36, "y": 182, "size": 48, "rotate": -15, "tone": "secondary" },
+      { "shape": "circle", "x": 114, "y": 132, "size": 12 }
+    ]
+  },
+  {
+    "slug": "stepped-weave", "name": "Stepped Weave", "nameMs": "Anyaman Bertangga", "category": "geometric",
+    "description": "Continuous navy and ochre stair-step ribbons interlock across the tile, separated by crisp cream channels.",
+    "descriptionMs": "Reben bertangga biru tua dan oker bersambung merentasi jubin, dipisahkan oleh jalur krim yang kemas.",
+    "width": 258, "height": 258,
+    "colors": { "primary": "#2D5275", "secondary": "#DA9E55", "background": "#F5EBD6" },
+    "motifs": [
+      {"shape": "corner-cascade", "x": -93, "y": 165, "size": 100},
+      {"shape": "corner-cascade", "x": -50, "y": 208, "size": 100},
+      {"shape": "corner-cascade", "x": -7, "y": 251, "size": 100},
+      {"shape": "corner-cascade", "x": -93, "y": -93, "size": 100},
+      {"shape": "corner-cascade", "x": -50, "y": -50, "size": 100},
+      {"shape": "corner-cascade", "x": -7, "y": -7, "size": 100},
+      {"shape": "corner-cascade", "x": 36, "y": 36, "size": 100},
+      {"shape": "corner-cascade", "x": 79, "y": 79, "size": 100},
+      {"shape": "corner-cascade", "x": 122, "y": 122, "size": 100},
+      {"shape": "corner-cascade", "x": 165, "y": 165, "size": 100},
+      {"shape": "corner-cascade", "x": 208, "y": 208, "size": 100},
+      {"shape": "corner-cascade", "x": 251, "y": 251, "size": 100},
+      {"shape": "corner-cascade", "x": 165, "y": -93, "size": 100},
+      {"shape": "corner-cascade", "x": 208, "y": -50, "size": 100},
+      {"shape": "corner-cascade", "x": 251, "y": -7, "size": 100},
+      {"shape": "corner-cascade", "x": -93, "y": 36, "size": 100, "tone": "secondary"},
+      {"shape": "corner-cascade", "x": -50, "y": 79, "size": 100, "tone": "secondary"},
+      {"shape": "corner-cascade", "x": -7, "y": 122, "size": 100, "tone": "secondary"},
+      {"shape": "corner-cascade", "x": 36, "y": 165, "size": 100, "tone": "secondary"},
+      {"shape": "corner-cascade", "x": 79, "y": 208, "size": 100, "tone": "secondary"},
+      {"shape": "corner-cascade", "x": 122, "y": 251, "size": 100, "tone": "secondary"},
+      {"shape": "corner-cascade", "x": 36, "y": -93, "size": 100, "tone": "secondary"},
+      {"shape": "corner-cascade", "x": 79, "y": -50, "size": 100, "tone": "secondary"},
+      {"shape": "corner-cascade", "x": 122, "y": -7, "size": 100, "tone": "secondary"},
+      {"shape": "corner-cascade", "x": 165, "y": 36, "size": 100, "tone": "secondary"},
+      {"shape": "corner-cascade", "x": 208, "y": 79, "size": 100, "tone": "secondary"},
+      {"shape": "corner-cascade", "x": 251, "y": 122, "size": 100, "tone": "secondary"}
+    ]
+  },
+  {
+    "slug": "celestial-atlas", "name": "Celestial Atlas", "nameMs": "Atlas Cakerawala", "category": "expressive",
+    "description": "Oversized orbital charts sit in offset celestial medallions, with tiny sparks between their satellites.",
+    "descriptionMs": "Carta orbit besar tersusun dalam medalion cakerawala berselang, dengan kilauan kecil di antara satelitnya.",
+    "width": 300, "height": 260,
+    "colors": { "primary": "#E8C784", "secondary": "#8A9BC4", "background": "#262A4A" },
+    "motifs": [
+      { "shape": "nested-orbit", "x": 16, "y": 12, "size": 144, "rotate": -20 },
+      { "shape": "satellite-triad", "x": 148, "y": 116, "size": 136, "rotate": 25, "tone": "secondary" },
+      { "shape": "fine-four-point-spark", "x": 222, "y": 28, "size": 46 },
+      { "shape": "classic-four-point-spark", "x": 34, "y": 192, "size": 32, "tone": "secondary" },
+      { "shape": "circle", "x": 182, "y": 58, "size": 8, "tone": "secondary" },
+      { "shape": "circle", "x": 104, "y": 220, "size": 10 }
+    ]
+  },
+  {
+    "slug": "rosette-lattice", "name": "Rosette Lattice", "nameMs": "Kekisi Roset", "category": "botanical",
+    "description": "Edge-wrapped rosettes alternate with a central layered bloom and a four-leaf diamond trellis.",
+    "descriptionMs": "Roset bersambung di tepi berselang dengan bunga tengah berlapis dan kekisi berlian empat daun.",
+    "width": 280, "height": 280,
+    "colors": { "primary": "#93475D", "secondary": "#C59160", "background": "#FFF2DA" },
+    "motifs": [
+      { "shape": "ten-lobe-rosette", "x": -56, "y": -56, "size": 112 },
+      { "shape": "ten-lobe-rosette", "x": 224, "y": -56, "size": 112 },
+      { "shape": "ten-lobe-rosette", "x": -56, "y": 224, "size": 112 },
+      { "shape": "ten-lobe-rosette", "x": 224, "y": 224, "size": 112 },
+      { "shape": "thin-circular-ring", "x": 76, "y": 76, "size": 128, "tone": "secondary" },
+      { "shape": "open-center-bloom", "x": 96, "y": 96, "size": 88 },
+      { "shape": "diagonal-pointed-leaf", "x": 50, "y": 50, "size": 52, "tone": "secondary" },
+      { "shape": "diagonal-pointed-leaf", "x": 178, "y": 50, "size": 52, "rotate": 90, "tone": "secondary" },
+      { "shape": "diagonal-pointed-leaf", "x": 50, "y": 178, "size": 52, "rotate": 90, "tone": "secondary" },
+      { "shape": "diagonal-pointed-leaf", "x": 178, "y": 178, "size": 52, "tone": "secondary" }
+    ]
+  },
+  {
+    "slug": "petal-pendant", "name": "Petal Pendant", "nameMs": "Loket Kelopak", "category": "botanical",
+    "description": "A hanging flower, paired leaf drops, and an inverted fan form a tall botanical stripe.",
+    "descriptionMs": "Bunga tergantung, pasangan daun berjuntai, dan kipas terbalik membentuk jalur botani menegak.",
+    "width": 180, "height": 320,
+    "colors": { "primary": "#38705C", "secondary": "#D38970", "background": "#F3F3DE" },
+    "motifs": [
+      { "shape": "circle", "x": 86, "y": 10, "size": 8, "tone": "secondary" },
+      { "shape": "circle", "x": 86, "y": 30, "size": 8, "tone": "secondary" },
+      { "shape": "floating-petals", "x": 42, "y": 46, "size": 96 },
+      { "shape": "diagonal-pointed-leaf", "x": 28, "y": 154, "size": 58, "rotate": 10, "tone": "secondary" },
+      { "shape": "diagonal-pointed-leaf", "x": 94, "y": 154, "size": 58, "rotate": 80, "tone": "secondary" },
+      { "shape": "seven-fold-fan", "x": 50, "y": 230, "size": 80, "rotate": 180 },
+      { "shape": "circle", "x": 86, "y": 218, "size": 8, "tone": "secondary" }
+    ]
+  },
+  {
+    "slug": "serpentine-stripe", "name": "Serpentine Stripe", "nameMs": "Jalur Berliku", "category": "expressive",
+    "description": "Bold serpentine ribbons run beside a narrow wave column, breaking the repeat into unequal vertical lanes.",
+    "descriptionMs": "Reben berliku tebal bersebelahan lajur gelombang sempit membahagikan ulangan kepada jalur menegak tidak sekata.",
+    "width": 280, "height": 200,
+    "colors": { "primary": "#41447C", "secondary": "#CD7D62", "background": "#F6ECD9" },
+    "motifs": [
+      { "shape": "rounded-serpentine", "x": 12, "y": 16, "size": 168 },
+      { "shape": "hand-cut-stacked-waves", "x": 198, "y": 8, "size": 76, "tone": "secondary" },
+      { "shape": "hand-cut-stacked-waves", "x": 198, "y": 108, "size": 76, "rotate": 180, "tone": "secondary" },
+      { "shape": "circle", "x": 178, "y": 90, "size": 10, "tone": "secondary" }
+    ]
+  }
+]

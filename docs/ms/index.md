@@ -29,7 +29,7 @@ features:
 ## Contoh Pantas
 
 ```html
-<script src="https://unpkg.com/@bookklik/senangstart-shapes@0.1.1/dist/senangstart-shape.min.js"></script>
+<script src="https://unpkg.com/@bookklik/senangstart-shapes@0.1.2/dist/senangstart-shape.min.js"></script>
 <ss-shape shape="soft-nova" variant="duotone"
   style="font-size: 80px"></ss-shape>
 ```

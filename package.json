@@ -1,6 +1,6 @@
 {
   "name": "@bookklik/senangstart-shapes",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Curated, customizable SVG shapes for web projects in the SenangStart ecosystem.",
   "main": "dist/senangstart-shape.cjs",
   "module": "dist/senangstart-shape.mjs",
@@ -17,6 +17,12 @@
       "require": "./dist/shapes.cjs"
     },
     "./catalog.json": "./dist/catalog.json",
+    "./patterns": {
+      "import": "./dist/patterns.mjs",
+      "require": "./dist/patterns.cjs"
+    },
+    "./pattern-catalog.json": "./dist/pattern-catalog.json",
+    "./patterns.css": "./dist/patterns.css",
     "./style.css": "./dist/senangstart.min.css",
     "./dist/*": "./dist/*",
     "./svg/*": "./dist/svg/*"

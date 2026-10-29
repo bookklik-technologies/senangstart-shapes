@@ -32,10 +32,10 @@ Saiz lalai ialah `1em`. Ubah `font-size`, atau tetapkan `width` dan `height` sec
 ## Gunakan CDN
 
 ```html
-<script src="https://unpkg.com/@bookklik/senangstart-shapes@0.1.1/dist/senangstart-shape.min.js"></script>
+<script src="https://unpkg.com/@bookklik/senangstart-shapes@0.1.2/dist/senangstart-shape.min.js"></script>
 <ss-shape shape="ten-lobe-rosette"></ss-shape>
 ```
 
-Contoh CDN mengandaikan versi 0.1.1 telah diterbitkan. Untuk pembangunan tempatan, gunakan `dist/senangstart-shape.min.js` selepas menjalankan `npm run build`.
+Contoh CDN mengandaikan versi 0.1.2 telah diterbitkan. Untuk pembangunan tempatan, gunakan `dist/senangstart-shape.min.js` selepas menjalankan `npm run build`.
 
 Baca panduan [pemasangan](./installation), [penggunaan](./usage) dan [penggayaan](./styling).

@@ -32,10 +32,10 @@ The default size is `1em`. Change `font-size`, or set `width` and `height` direc
 ## Use a CDN
 
 ```html
-<script src="https://unpkg.com/@bookklik/senangstart-shapes@0.1.1/dist/senangstart-shape.min.js"></script>
+<script src="https://unpkg.com/@bookklik/senangstart-shapes@0.1.2/dist/senangstart-shape.min.js"></script>
 <ss-shape shape="ten-lobe-rosette"></ss-shape>
 ```
 
-CDN examples assume version 0.1.1 has been published. During local development, use `dist/senangstart-shape.min.js` after running `npm run build`.
+CDN examples assume version 0.1.2 has been published. During local development, use `dist/senangstart-shape.min.js` after running `npm run build`.
 
 Read [installation](./installation), [usage](./usage), and [styling](./styling) for more options.

@@ -81,7 +81,7 @@ function buildAssets() {
 
   const styleSource = fs.readFileSync(path.join(root, 'src/styles.js'), 'utf8');
   const baseStyles = styleSource.match(/export const loaderStyles = `([\s\S]*?)`;/)[1];
-  let css = '/* SenangStart Shapes v0.1.1 | MIT | Generated from src/shapes/ */\n' + baseStyles;
+  let css = '/* SenangStart Shapes v0.1.2 | MIT | Generated from src/shapes/ */\n' + baseStyles;
   for (const shape of catalog) {
     css += `\n.ss-shape.ss-shape-${shape.slug}{--ss-shape-mask:none}\n`;
     for (const variant of shape.variants) {

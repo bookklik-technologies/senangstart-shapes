@@ -8,6 +8,7 @@ const navigation = ms => [
   { text: ms ? 'Utama' : 'Home', link: ms ? '/ms/' : '/' },
   { text: ms ? 'Panduan' : 'Guide', link: `${ms ? '/ms' : ''}/guide/getting-started` },
   { text: ms ? 'Bentuk' : 'Shapes', link: `${ms ? '/ms' : ''}/shapes/` },
+  { text: ms ? 'Corak' : 'Patterns', link: `${ms ? '/ms' : ''}/patterns/` },
   { text: `v${pkg.version}`, link: 'https://github.com/bookklik-technologies/senangstart-shapes' },
 ];
 const guideTitles = {

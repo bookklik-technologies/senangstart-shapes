@@ -30,7 +30,7 @@ Invalid or omitted thickness preserves the source strokes. Thickness does not af
 Include `@bookklik/senangstart-shapes/style.css` or the browser stylesheet:
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@bookklik/senangstart-shapes@0.1.1/dist/senangstart.min.css">
+<link rel="stylesheet" href="https://unpkg.com/@bookklik/senangstart-shapes@0.1.2/dist/senangstart.min.css">
 <i class="ss-shape ss-shape-soft-nova"
    data-variant="duotone"
    style="color: #2563eb; font-size: 64px"
