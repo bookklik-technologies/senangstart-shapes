@@ -37,3 +37,13 @@ features:
 <ss-shape shape="soft-nova" variant="duotone" style="font-size:80px"></ss-shape>
 
 CDN examples are ready for publication. For the local repository, build and load `dist/senangstart-shape.min.js`.
+
+---
+
+<div style="display: flex; justify-content: center; margin-top: 2rem;">
+  <a href="https://makakami.com.my/app/senangstart-shapes" target="_blank" rel="noopener noreferrer">
+    <img src="https://makakami.com.my/badge/senangstart-shapes.svg"
+      alt="Listed on MakaKami"
+      width="150" height="40">
+  </a>
+</div>
