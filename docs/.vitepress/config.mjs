@@ -33,7 +33,15 @@ export default defineConfig({
   description: 'Expressive, customizable SVG shapes for modern web projects.',
   base: '/senangstart-shapes/',
   cleanUrls: true,
-  head: [['link', { rel: 'icon', type: 'image/svg+xml', href: '/senangstart-shapes/assets/ss-logo.svg' }]],
+  head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/senangstart-shapes/assets/ss-logo.svg' }],
+    ['script', {
+      src: 'https://web.senanglab.com/widget.js',
+      'data-site': '47f26cce-f013-4f63-9062-b3de93352ca2',
+      referrerpolicy: 'no-referrer',
+      defer: ''
+    }]
+  ],
   locales: {
     root: { label: 'English', lang: 'en' },
     ms: { label: 'Bahasa Melayu', lang: 'ms', description: 'Bentuk SVG yang ekspresif dan boleh disesuaikan untuk projek web.', themeConfig: { nav: navigation(true), sidebar: sidebar(true), outline: { label: 'Pada halaman ini' }, docFooter: { prev: 'Sebelumnya', next: 'Seterusnya' }, returnToTopLabel: 'Kembali ke atas', sidebarMenuLabel: 'Menu' } },
