@@ -34,7 +34,7 @@ export default defineConfig({
   base: '/senangstart-shapes/',
   cleanUrls: true,
   head: [
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/senangstart-shapes/assets/ss-logo.svg' }],
+    ['link', { rel: 'icon', type: 'image/png', href: 'https://senangstart.com/img/ss_icon_accent.svg' }],
     ['script', {
       src: 'https://web.senanglab.com/widget.js',
       'data-site': '47f26cce-f013-4f63-9062-b3de93352ca2',
